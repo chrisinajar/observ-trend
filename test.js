@@ -8,9 +8,9 @@ test('basic', function (t) {
   t.plan(4);
 
   t.equals(trend(), 0, 'starts at 0');
-  value.set(124);
+  value.set(125);
   t.equals(trend(), 1, '1 when it goes up');
-  value.set(1);
+  value.set(124);
   t.equals(trend(), -1, 'negative 1 when it goes down');
 
   trend(t.pass);

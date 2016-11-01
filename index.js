@@ -7,11 +7,13 @@ function observTrend (otherValue) {
   var oldValue = otherValue();
 
   otherValue(function (newValue) {
-    if (newValue === oldValue) {
+    var _oldValue = oldValue;
+    oldValue = newValue;
+    if (newValue === _oldValue) {
       return value.set(0);
-    } else if (newValue > oldValue) {
+    } else if (newValue > _oldValue) {
       return value.set(1);
-    } else if (newValue < oldValue) {
+    } else if (newValue < _oldValue) {
       return value.set(-1);
     }
   });
