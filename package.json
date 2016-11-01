@@ -1,0 +1,30 @@
+{
+  "name": "observ-trend",
+  "version": "0.0.0",
+  "description": "Observ value returning -1, 0, or 1 depending on the trend of another value",
+  "main": "index.js",
+  "scripts": {
+    "test": "semistandard && tape ./test.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisinajar/observ-trend.git"
+  },
+  "keywords": [
+    "observ"
+  ],
+  "author": "Chris Vickery <chrisinajar@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chrisinajar/observ-trend/issues"
+  },
+  "homepage": "https://github.com/chrisinajar/observ-trend#readme",
+  "devDependencies": {
+    "semistandard": "^9.1.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.2"
+  },
+  "dependencies": {
+    "observ": "^0.2.0"
+  }
+}
